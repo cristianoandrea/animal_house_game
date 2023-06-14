@@ -1,0 +1,17 @@
+<!--div class="font">
+    <h1>Dino Game</h1>
+    <button type="button" class="btn btn-secondary buttone" *ngIf="!game_started" (click)="start()">Inizia!</button>
+
+    <div>
+        <app-trex-game *ngIf="game_started"></app-trex-game>
+    </div>
+    <button type="button" class="btn btn-secondary buttone" *ngIf="game_started" (click)="start()">Chiudi</button>
+    
+
+</div!-->
+<div class="container">
+    <app-infocards [info]="quiz" [photoRight]="true"></app-infocards>
+    <app-infocards [info]="images" [photoRight]="false"></app-infocards>
+    <app-infocards [info]="youtube" [photoRight]="true"></app-infocards>
+    
+</div>
